@@ -1,0 +1,19 @@
+.sort-by-title {
+  font-weight: 400;
+  margin-right: 10px;
+  font-size: 0.9em;
+}
+.sort-by-selection {
+  font-size: 0.89em;
+  font-weight: 400;
+  min-width: 15px;
+  max-width: auto;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.35em 0.5em;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  &::-ms-expand {
+    display: none;
+  }
+}

@@ -1,0 +1,22 @@
+.product-card {
+  background: red;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+// scoreProductList.slice(0, 8).map((item) => (
+//     <article className="col-3 product-list-item" key={item.id}>
+//       <Card>
+//         <Link style={{ display: "block" }} to={`/productDetail/${item.id}`}>
+//           <img src={item.image} width="100" />
+//           <div className="product-list-item-detail">
+//             <p>{item.name}</p>
+//             <p>{item.category}</p>
+//             <p>{item.price}</p>
+//             <p>secore: {item.score}</p>
+//           </div>
+//         </Link>
+//       </Card>
+//     </article>
+//   ));

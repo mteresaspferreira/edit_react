@@ -1,0 +1,22 @@
+.date-list {
+  display: flex;
+  align-items: center;
+  color: #4b4a4f;
+}
+
+.date-list--day {
+  font-weight: 700;
+  font-size: 40px;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.date-list--monthYear {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 14px;
+  text-transform: lowercase;
+}

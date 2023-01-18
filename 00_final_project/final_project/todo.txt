@@ -1,0 +1,21 @@
+
+
+criar variaveis cor scss
+passar para typescript
+criar função para transition
+
+
+
+ir buscar os sizes do detail do product
+fiveico
+
+react-simple-star-rating
+
+
+dividir listas homepage em containers
+
+shop -> buttons selecionados com class active
+load more produtos shop
+
+
+score 4.2 passa para 5

@@ -1,0 +1,28 @@
+.breadcrumb-section {
+  box-shadow: 0px 16px 20px -20px rgb(0 0 0 / 75%);
+  margin-bottom: 40px;
+  padding: 20px 0;
+  ul {
+    display: flex;
+    li {
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+    li:not(:first-child) {
+      position: relative;
+      &:before {
+        content: "";
+        background-image: url(../../assets/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        height: 8px;
+        width: 10px;
+        margin-right: 8px;
+        margin-left: 10px;
+        display: inline-block;
+        transition: all 0.2s ease;
+      }
+    }
+  }
+}

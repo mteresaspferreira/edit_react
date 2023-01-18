@@ -1,0 +1,89 @@
+.carousel-item {
+  position: relative;
+  width: 100%;
+  @media only screen and (min-width: 1420px) {
+    height: 700px;
+  }
+  @media only screen and (max-width: 425px) {
+    display: none !important;
+  }
+  &:before {
+    content: "";
+    background: #000000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    display: block;
+    width: 100%;
+    z-index: 3;
+  }
+  .carousel-caption {
+    text-align: right;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    z-index: 9;
+    @media only screen and (min-width: 700px) {
+      min-width: 76%;
+    }
+    .carousel-item-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      text-align: left;
+      max-width: 100%;
+      @media only screen and (min-width: 700px) {
+        max-width: 50%;
+      }
+      h3 {
+        font-weight: 400;
+        font-size: 1.4em;
+        width: 100%;
+        text-align-last: left;
+        @media only screen and (min-width: 700px) {
+          font-size: 2.4em;
+        }
+      }
+      p {
+        margin-top: 10px;
+      }
+      a {
+        position: relative;
+        font-weight: 500;
+        font-size: 0.65em;
+        line-height: 15px;
+        letter-spacing: 0.03em;
+        width: 66px;
+        margin-top: 30px;
+        display: inline-block !important;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        padding: 15px 0;
+        text-align: left;
+        &:after {
+          content: "";
+          position: absolute;
+          height: 1px;
+          background-color: white;
+          right: 0;
+          left: 0;
+          bottom: 0px;
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+        &:hover::after {
+          content: "";
+          opacity: 0;
+        }
+      }
+    }
+  }
+}

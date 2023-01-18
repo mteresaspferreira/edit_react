@@ -1,0 +1,44 @@
+section.about {
+  .about-first-paragraph {
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.625em;
+    margin-bottom: 20px !important;
+    display: block;
+    color: #000;
+  }
+  .about-second-paragraph {
+    margin-bottom: 20px;
+    h3 {
+      font-weight: 500;
+      font-size: 1em;
+      line-height: 1.625em;
+      letter-spacing: 0.005em;
+      color: #414040;
+      text-transform: uppercase;
+      margin-bottom: 5px;
+      display: block;
+    }
+    p {
+      font-weight: 500;
+      font-size: 1em;
+      line-height: 1.625em;
+      letter-spacing: 0.005em;
+    }
+  }
+  .about-third-paragraph {
+    h3 {
+      font-weight: 500;
+      font-size: 1em;
+      line-height: 1.625em;
+      letter-spacing: 0.005em;
+      color: #333333 !important;
+    }
+    ul li {
+      font-weight: 400;
+      font-size: 0.9em;
+      line-height: 1.625em;
+      letter-spacing: 0.02em;
+    }
+  }
+}

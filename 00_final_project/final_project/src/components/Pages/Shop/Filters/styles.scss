@@ -1,0 +1,124 @@
+//title filter
+.filters-title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.85em;
+}
+
+//remove filters
+.btn-remove-filter {
+  font-size: 0.7em;
+  transition: all 0.3s ease;
+  &:hover:not(:disabled) {
+    text-decoration: underline;
+  }
+}
+
+//accordion filters
+.accordion {
+  .accordion-button {
+    background-color: transparent !important;
+  }
+
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+
+  .accordion-button:not(.collapsed) {
+    color: #212529;
+  }
+  .accordion-item {
+    background-color: transparent !important;
+    border: none;
+    .accordion-header {
+      padding: 0 !important;
+      margin: 0 !important;
+      box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+      button {
+        font-size: 0.6em !important;
+        font-weight: 500;
+        color: black;
+        box-shadow: rgb(0 0 0 / 0%) 0px 0px 0px;
+        padding: 10px 0 !important;
+        &.collapsed {
+          padding: 10px 0 !important;
+          &::after {
+            background-position: center;
+          }
+        }
+        &:after {
+          content: "";
+          background-image: url(../../../../assets/arrow-down.svg);
+          background-size: 12px;
+        }
+      }
+    }
+    .accordion-body {
+      padding: 0 10px !important;
+      button:not(.btn-size) {
+        display: block;
+        background: transparent !important;
+        &:before {
+          content: "";
+          background-image: url(../../../../assets/arrow-right.svg);
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: 1px center;
+          height: 10px;
+          width: 12px;
+          margin-right: 2px;
+          display: inline-block;
+          position: relative;
+          left: 0;
+          transition: all 0.2s ease;
+        }
+        &:hover::before {
+          left: 3px;
+        }
+        &:disabled {
+          color: #ccc;
+          &::before {
+            left: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//size buttons
+.size-buttons {
+  h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 0.85em;
+    margin-bottom: 15px !important;
+    display: block;
+  }
+  .buttons-container {
+    display: flex;
+    justify-content: space-between;
+    button.btn-size {
+      background: transparent !important;
+      font-size: 0.8em;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #ccc;
+      margin-right: 5px;
+      transition: all 0.3s ease;
+      &:hover {
+        border: 1px solid #000;
+      }
+      &:disabled {
+        background: #ccc !important;
+        color: #000 !important;
+        border: 1px solid #000;
+      }
+    }
+  }
+  .sizes-info {
+    text-transform: uppercase;
+    font-size: 0.75em;
+    margin-top: 15px;
+  }
+}
