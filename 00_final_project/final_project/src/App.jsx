@@ -1,5 +1,10 @@
+//css
+import "./app.scss";
+//react
 import React, { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
+//bootstrap
+import Container from "react-bootstrap/Container";
 //components
 import Header from "./components/Layout/Header/Header";
 import Homepage from "./components/Pages/Homepage/Homepage";
@@ -12,13 +17,6 @@ import ProductDetail from "./sharedComponents/ProductDetail/ProductDetail";
 import TopMesssage from "./sharedComponents/TopMessage/TopMessage";
 import { Login } from "./components/Pages/Login/Login";
 import { ShoppingCart } from "./components/Pages/ShoppingCart/ShoppingCart";
-
-import "./app.scss";
-
-//bootstrap
-import Container from "react-bootstrap/Container";
-// //providers
-// import { CartContextProvider } from "./contexts/CartContext";
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
