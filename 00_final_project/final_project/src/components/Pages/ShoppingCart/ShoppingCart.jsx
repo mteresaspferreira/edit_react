@@ -1,28 +1,38 @@
-import { useContext } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import { CartItem } from "./CartItem/CartItem";
+import { useContext, useState, useEffect } from "react";
+import "./styles.scss";
 
 import { CartContext } from "../../../contexts/CartContext";
+import { Container, Row } from "react-bootstrap";
+
+import { EmptyCart } from "./EmptyCart/EmptyCart";
+import { CartSummary } from "./CartSummary/CartSummary";
+import { CartProducts } from "./CartProducts/CartProducts";
 
 export const ShoppingCart = () => {
-  const { cartItems } = useContext(CartContext);
+  const [total, setTotal] = useState(0.0);
+
   //context
-  // const { cartItems } = useContext(CartContext);
-  console.log("shopping cart ", cartItems);
+  const { cartItems } = useContext(CartContext);
+
+  useEffect(() => {
+    let subtotal = 0;
+    cartItems.map((el) => {
+      subtotal += el.quantity * el.price;
+    });
+    setTotal(subtotal);
+  }, [cartItems]);
 
   return (
-    <div>
-      <h2>Cart</h2>
-      <div>
-        {cartItems.map((el) => (
-          <li key={el.id}>
-            <p>{el.name}</p>
-            <p>quantity: {el.quantity}</p>
-            <p>size: {el.size}</p>
-            <p>price: {el.price}</p>
-          </li>
-        ))}
-      </div>
-    </div>
+    <Container>
+      <Row>
+        {cartItems.length == 0 && <EmptyCart />}
+        {cartItems.length > 0 && (
+          <section className="cart-container">
+            <CartProducts cartItems={cartItems} />
+            <CartSummary total={total} />
+          </section>
+        )}
+      </Row>
+    </Container>
   );
 };

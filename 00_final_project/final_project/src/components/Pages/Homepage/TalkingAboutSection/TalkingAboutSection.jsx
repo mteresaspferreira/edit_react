@@ -1,7 +1,10 @@
+//css
 import "./styles.scss";
-
+//bootstrap
 import { Container, Row } from "react-bootstrap";
+//components
 import TitleSection from "../TitleSection/TitleSection";
+//images
 import talking01 from "../../../../assets/homepage/talking_about_us/talking01.svg";
 import talking02 from "../../../../assets/homepage/talking_about_us/talking02.svg";
 import talking03 from "../../../../assets/homepage/talking_about_us/talking03.svg";

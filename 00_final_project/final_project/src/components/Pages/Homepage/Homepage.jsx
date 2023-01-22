@@ -1,12 +1,13 @@
+//css
 import "./styles.scss";
-
+//bootstrap
 import { Container, Row, Col } from "react-bootstrap";
+//components
 import TopProducts from "./TopProducts/TopProducts";
 import ImageSlider from "../../../sharedComponents/ImageSlider/ImageSlider";
 import AboutSection from "./AboutSection/AboutSection";
 import LooksSection from "./LooksSection/LooksSection";
 import LoaderContainer from "../../../sharedComponents/LoaderContainer/LoaderContainer";
-
 //images
 import imgLooks1 from "../../../assets/homepage/looks/looks01.jpg";
 import imgLooks2 from "../../../assets/homepage/looks/looks02.jpg";

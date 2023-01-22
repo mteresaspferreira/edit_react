@@ -1,8 +1,10 @@
+//css
 import "./styles.scss";
-
+//bootstrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
+//components
 import SiteMapLinks from "./SiteMapLinks/SiteMapLinks";
 import SiteMapTitle from "./SiteMapTitle/SiteMapTitle";
 
@@ -43,9 +45,9 @@ const Footer = () => {
               <span className="site-map-address--tel">+49 (0) 9132 84-0</span>
             </p>
           </Col>
-          <Col lg={6} md={12}>
+          {/* <Col lg={6} md={12}>
             <SiteMapTitle title={"Subscribe to newsletter"} />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </footer>

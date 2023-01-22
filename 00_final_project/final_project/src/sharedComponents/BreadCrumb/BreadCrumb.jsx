@@ -1,5 +1,7 @@
-import { Container, Row } from "react-bootstrap";
+//css
 import "./styles.scss";
+//bootstrap
+import { Container, Row } from "react-bootstrap";
 
 function BreadCrumb({ productCategory, productName }) {
   return (

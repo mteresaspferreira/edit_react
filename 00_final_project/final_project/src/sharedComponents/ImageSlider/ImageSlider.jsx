@@ -1,7 +1,9 @@
+//css
 import "./styles.scss";
-
-import Carousel from "react-bootstrap/Carousel";
+//reat
 import { Link } from "react-router-dom";
+//bootstrap
+import Carousel from "react-bootstrap/Carousel";
 
 const Slideshow = () => {
   const sliderList = [

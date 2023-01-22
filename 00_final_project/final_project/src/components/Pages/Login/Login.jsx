@@ -1,5 +1,5 @@
-import React from "react";
+import TitleSection from "../Homepage/TitleSection/TitleSection";
 
 export const Login = () => {
-  return <div>Login</div>;
+  return <TitleSection titleName="Login" />;
 };

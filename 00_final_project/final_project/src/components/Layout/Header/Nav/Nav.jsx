@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
-import image from "../../../../assets/arrow-down.svg";
-
+//css
 import "./styles.scss";
+//react
+import { Link } from "react-router-dom";
 
 const Nav = () => {
   return (

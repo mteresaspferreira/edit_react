@@ -13,6 +13,8 @@ import TopMesssage from "./sharedComponents/TopMessage/TopMessage";
 import { Login } from "./components/Pages/Login/Login";
 import { ShoppingCart } from "./components/Pages/ShoppingCart/ShoppingCart";
 
+import "./app.scss";
+
 //bootstrap
 import Container from "react-bootstrap/Container";
 // //providers
@@ -55,7 +57,6 @@ function App() {
       setAllProducts(data.data.products);
       setIsLoading(false);
     } catch (error) {
-      console.log(error);
       setError(error.message);
     }
   }
@@ -65,7 +66,7 @@ function App() {
   }, []);
 
   return (
-    <Container fluid className="g-0">
+    <Container fluid className="g-0 app-container">
       <TopMesssage />
       <Header />
       <div className="container-page">

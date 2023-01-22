@@ -48,7 +48,10 @@ export const CartProvider = ({ children }) => {
   //     return currItems.filter((item) => item.id !== id);
   //   });
   // }
-  console.log("context cart items ", cartItems);
+
+  // function updateCart(curr) {
+  //   setCartItems([...curr, selectedProduct]);
+  // }
 
   return (
     <CartContext.Provider
@@ -63,7 +66,6 @@ export const CartProvider = ({ children }) => {
       }}
     >
       {children}
-      <ShoppingCart />
     </CartContext.Provider>
   );
 };

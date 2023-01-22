@@ -1,14 +1,16 @@
-import React, { useContext, useEffect, useState } from "react";
+//css
+import "./styles.scss";
+//react
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+//bootstrap
 import { Container, Row, Col } from "react-bootstrap";
-
+//components
 import NavMenu from "./Nav/Nav";
 import Icon from "../../UI/Icon/Icon";
-
-import { CartContext } from "../../../contexts/CartContext";
-
-import "./styles.scss";
 import logoEdit from "../../../assets/logo-edit.svg";
+//context
+import { CartContext } from "../../../contexts/CartContext";
 
 const Header = () => {
   const { cartItems } = useContext(CartContext);
@@ -41,9 +43,18 @@ const Header = () => {
             <Link to="#" style={{ display: "flex" }}>
               <Icon name={"favourite"} height={"20px"} color={"white"} />
             </Link>
-            <Link to="/cart" style={{ display: "flex" }}>
+            <Link
+              to="/cart"
+              style={{ display: "flex", alignItems: "flex-end" }}
+            >
               <Icon name={"cart"} height={"20px"} color={"white"} />
-              {cartItems != undefined && <div>{cartItems.length} </div>}
+              {cartItems != undefined && (
+                <span
+                  style={{ fontSize: "0.8em", lineHeight: "1", width: "8px" }}
+                >
+                  {cartItems.length}{" "}
+                </span>
+              )}
             </Link>
           </Col>
         </Row>

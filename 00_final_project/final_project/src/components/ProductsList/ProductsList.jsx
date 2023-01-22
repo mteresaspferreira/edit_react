@@ -1,5 +1,6 @@
+//css
 import "./styles.scss";
-
+//react
 import { useParams, Link } from "react-router-dom";
 
 const ProductsList = ({ productsList, col }) => {

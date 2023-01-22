@@ -1,7 +1,7 @@
+//css
 import "./styles.scss";
-
-import Container from "react-bootstrap/esm/Container";
-import Row from "react-bootstrap/esm/Row";
+//bootstrap
+import { Container, Row } from "react-bootstrap";
 
 const TitleSection = ({ titleName }) => {
   return (

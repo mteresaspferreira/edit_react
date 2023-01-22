@@ -1,5 +1,7 @@
+import TitleSection from "../Homepage/TitleSection/TitleSection";
+
 const Journal = () => {
-  return <div>journal</div>;
+  return <TitleSection titleName="Journal" />;
 };
 
 export default Journal;

@@ -1,6 +1,8 @@
+//css
 import "./styles.scss";
-
+//bootstrap
 import { Container, Row, Col } from "react-bootstrap";
+//components
 import TitleSection from "../TitleSection/TitleSection";
 
 const LooksSection = ({ sectionLooks }) => {
